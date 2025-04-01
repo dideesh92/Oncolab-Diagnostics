@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Navbar from "../components/ Navbar.jsx"; 
 import ButtonGroup from "../components/ButtonGroup.jsx";
 import Sidebar from '../Pages/SideBar.jsx';
+import Footer from '../components/Footer.jsx'
 
 
 const Home = () => {
@@ -35,7 +36,7 @@ const Home = () => {
         >
           <Navbar setIsSidebarOpen={setIsSidebarOpen} />
           <ButtonGroup />
-          <div className="mt-4 bg-gray-200 h-64 rounded-md shadow-md flex justify-center items-center">
+          <div className="mt-1 bg-gray-200 h-screen w-full rounded-md shadow-md flex justify-center items-center overflow-hidden">
             <select className="border rounded-md w-50 text-xs">
               {options.map((option, index) => (
                 <option key={index} value={option}>
@@ -55,8 +56,9 @@ const Home = () => {
               />
             </div>
           </div>
+          <Footer/>
         </div>
-      </div>
+        </div>
     );
   };
   

@@ -52,10 +52,10 @@ const BillTransactionForm = () => {
    <div>
     <Navbar/>
     <ButtonGroup/>
-     <div className="p-4 bg-gray-300 min-h-screen flex justify-center">
-      <div className="bg-white p-6 rounded shadow-md w-full max-w-7xl">
+     <div className="p-4 bg-gray-400 min-h-screen flex justify-center">
+      <div className="bg-white p-9 rounded shadow-md w-full max-w-7xl">
         <h2 className="text-lg font-semibold mb-4 text-center">Enter Bill Transaction</h2>
-        <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {Object.keys(formData).map((key) => (
             <div key={key} className="flex flex-col">
               <label className="block text-sm font-medium">{key.replace(/([A-Z])/g, " $1")}</label>
