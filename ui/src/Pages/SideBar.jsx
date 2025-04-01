@@ -42,8 +42,6 @@ const Sidebar = () => {
             </span>
           </li>
         ))}
-
-        {/* Expandable Financial MIS Section */}
         <li
           className="relative flex items-center justify-between cursor-pointer p-2 rounded transition-all duration-300 group"
           onClick={() => setFinancialMISOpen(!financialMISOpen)}
