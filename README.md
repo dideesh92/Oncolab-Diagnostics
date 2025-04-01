@@ -29,7 +29,7 @@ This project serves the purpose of handling patient payment data at **Oncolab Di
 ### **Backend Setup**
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/oncolab-diagnostics.git
+   git clone https://github.com/dideesh92/Oncolab-Diagnostics.git
    cd oncolab-diagnostics/server
    ```
 2. Install dependencies:
