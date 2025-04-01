@@ -30,7 +30,7 @@ This project serves the purpose of handling patient payment data at **Oncolab Di
 1. Clone the repository:
    ```sh
    git clone https://github.com/yourusername/oncolab-diagnostics.git
-   cd oncolab-diagnostics/backend
+   cd oncolab-diagnostics/server
    ```
 2. Install dependencies:
    ```sh
@@ -38,8 +38,8 @@ This project serves the purpose of handling patient payment data at **Oncolab Di
    ```
 3. Create a `.env` file and add MongoDB connection string:
    ```sh
-   MONGO_URI=your_mongodb_connection_string
-   PORT=5000
+   MONGO_URI=mongodb://localhost:27017/hoapitalbill
+   PORT=3000
    ```
 4. Start the server:
    ```sh
@@ -49,7 +49,7 @@ This project serves the purpose of handling patient payment data at **Oncolab Di
 ### **Frontend Setup**
 1. Navigate to frontend directory:
    ```sh
-   cd ../frontend
+   cd ../ui
    ```
 2. Install dependencies:
    ```sh
@@ -57,7 +57,7 @@ This project serves the purpose of handling patient payment data at **Oncolab Di
    ```
 3. Start the React application:
    ```sh
-   npm start
+   npm run dev
    ```
 
 ## Usage
