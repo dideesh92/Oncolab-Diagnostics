@@ -61,7 +61,7 @@ This project serves the purpose of handling patient payment data at **Oncolab Di
    ```
 
 ## Usage
-- Open `http://localhost:3000` in the browser.
+- Open `http://localhost:5173/` in the browser.
 - Use the **Create** button to enter payment details.
 - Navigate to **Bill Transaction Report** to view and search stored transactions.
 - Use **Billing Statement** to fetch data by date range.
@@ -73,5 +73,5 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 This project is licensed under the MIT License.
 
 ---
-**Developed for Oncolab Diagnostics by [Your Name]** 🚀
+**Developed for Oncolab Diagnostics by [Dideesh Babu N]** 🚀
 
