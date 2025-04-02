@@ -25,6 +25,12 @@ This project serves the purpose of handling patient payment data at **Oncolab Di
 - Allows fetching data based on **From Date & To Date**.
 - Enables different filtering options for financial analysis.
 
+### 4. **Patient Records**
+
+A page has been created for recording the patient data, and it is displayed at the bottom side of the same page.
+
+You can navigate to this section via Sidebar > Financial MIS Reports > Patient Records.
+
 ## Setup Instructions
 ### **Backend Setup**
 1. Clone the repository:
