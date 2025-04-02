@@ -26,10 +26,8 @@ This project serves the purpose of handling patient payment data at **Oncolab Di
 - Enables different filtering options for financial analysis.
 
 ### 4. **Patient Records**
-
-A page has been created for recording the patient data, and it is displayed at the bottom side of the same page.
-
-You can navigate to this section via Sidebar > Financial MIS Reports > Patient Records.
+- A page has been created for recording the patient data, and it is displayed at the bottom side of the same page.
+- You can navigate to this section via **Sidebar > Financial MIS Reports > Patient Records**.
 
 ## Setup Instructions
 ### **Backend Setup**
@@ -71,6 +69,7 @@ You can navigate to this section via Sidebar > Financial MIS Reports > Patient R
 - Use the **Create** button to enter payment details.
 - Navigate to **Bill Transaction Report** to view and search stored transactions.
 - Use **Billing Statement** to fetch data by date range.
+- Access **Patient Records** to view and manage patient data at the bottom of the page.
 
 ## Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss proposed modifications.
