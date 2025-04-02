@@ -71,6 +71,15 @@ const Sidebar = () => {
               <FaUser className="relative" />
               <span className="relative">Billing Statement</span>
             </li>
+
+            <li
+              className="relative flex items-center space-x-2 cursor-pointer p-2 rounded transition-all duration-300 group"
+              onClick={() => navigate("/patient")}
+            >
+              <span className="absolute inset-0 bg-blue-700 scale-0 rounded-full transition-transform duration-300 group-hover:scale-100"></span>
+              <FaUser className="relative" />
+              <span className="relative">Patient Record</span>
+            </li>
           </ul>
         )}
 

@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
 const Transaction = require("./models/billingschema")
+const Patient= require("./models/Patientschema")
 
 const app = express();
 app.use(express.json());
@@ -27,6 +28,24 @@ app.post("/transactions", async (req, res) => {
     res.status(201).json({ message: "Transaction saved successfully" });
   } catch (error) {
     res.status(500).json({ error: "Failed to save transaction" });
+  }
+});
+app.post("/patients", async (req, res) => {
+  try {
+    const newPatient = new Patient(req.body);
+    await newPatient.save();
+    res.status(201).json(newPatient);
+  } catch (error) {
+    res.status(500).json({ error: "Error adding patient" });
+  }
+});
+
+app.get("/patients", async (req, res) => {
+  try {
+    const patients = await Patient.find();
+    res.status(200).json(patients);
+  } catch (error) {
+    res.status(500).json({ error: "Error fetching patients" });
   }
 });
 
