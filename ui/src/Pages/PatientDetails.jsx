@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Navbar from "../components/ Navbar";
+import ButtonGroup from "../components/ButtonGroup";
 
 const PatientDetails = () => {
   const [patients, setPatients] = useState([]);
@@ -40,26 +42,10 @@ const PatientDetails = () => {
   };
 
   return (
-    <div className="flex h-screen bg-gray-100">
-      <div className="w-1/3 bg-white shadow p-4 overflow-auto">
-        <h2 className="text-xl font-bold mb-4">Patient List</h2>
-        {patients.length === 0 ? (
-          <p className="text-gray-500">No patients added</p>
-        ) : (
-          <ul>
-            {patients.map((patient, index) => (
-              <li key={index} className="border-b py-2">
-                <p><strong>Name:</strong> {patient.name}</p>
-                <p><strong>Age:</strong> {patient.age}</p>
-                <p><strong>Gender:</strong> {patient.gender}</p>
-                <p><strong>Email:</strong> {patient.email}</p>
-                <p><strong>Phone:</strong> {patient.phone}</p>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-      <div className="w-2/3 p-8">
+    <div className="min-h-screen bg-gray-100">
+    <Navbar />
+    <ButtonGroup />
+    <div className="w-2/3 p-8">
         <h2 className="text-2xl font-bold mb-4">Add Patient</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
@@ -115,6 +101,25 @@ const PatientDetails = () => {
           </button>
         </form>
       </div>
+      <div className="w-3/3 bg-white shadow p-9 overflow-auto">
+        <h2 className="text-xl font-bold mb-4">Patient List</h2>
+        {patients.length === 0 ? (
+          <p className="text-gray-500">No patients added</p>
+        ) : (
+          <ul>
+            {patients.map((patient, index) => (
+              <li key={index} className="border-b py-2">
+                <p><strong>Name:</strong> {patient.name}</p>
+                <p><strong>Age:</strong> {patient.age}</p>
+                <p><strong>Gender:</strong> {patient.gender}</p>
+                <p><strong>Email:</strong> {patient.email}</p>
+                <p><strong>Phone:</strong> {patient.phone}</p>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+      
     </div>
   );
 };
